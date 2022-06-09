@@ -1,0 +1,89 @@
+<html>
+	<head>
+	   <meta charset="utf-8">
+	<style>
+	hr{color:#FF0000;
+	height:3px;
+	background-color:red;}
+	
+	.obowiazkowo{color:orange;
+	margin:10px;
+	padding:10px;
+	padding-top:ins;
+	border:solid;
+	border-color:grey;
+	font-family:monospace;
+	font-size:18;}
+	
+	.opcjonalne{color:green;
+	margin:10px;
+	padding:10px;
+	border:solid;
+	border-color:grey;
+	font-family:monospace;
+	font-size:18;}
+	
+	.zainteresowania{color:green;
+	position:absolute;
+	left:60%;
+	top:360px;
+	font-family:monospace;
+	font-size:18;}
+	
+	.IN{position:absolute;
+	left:120px;}
+	
+	.M{position:absolute;
+	left:260px;}
+	</style>
+	</head>
+	<body>
+	<h1><center><b>Wypełnij formularz</b></center>
+</h1></b><hr>
+<div class="obowiazkowo">Wypełnij obowiązkowo!<br><br>
+<form action="http://www.example.com" method="get" name="jakas_nazwa">
+Imię <input class="IN" type="text" name="jakas_nazwa1" value="" size="30" maxlength="10" >
+<br>
+Nazwisko <input class="IN" type="text" name="jakas_nazwa1" value="" size="30" maxlength="10" >
+<br>
+
+Płeć: <input type="radio" name="jakas_nazwa1" value="SW">mężczyzna
+<input type="radio" name="jakas_nazwa1" value="SM">kobieta<br>
+
+Miejsce zamieszkania <input class="M" type="text" name="jakas_nazwa1" value="" size="30" maxlength="10" >
+<br>Miasto <input class="M" type="text" name="jakas_nazwa1" value="" size="30" maxlength="10" >
+</div>
+
+<div class="opcjonalne">Opcjonalne dane<br><br>
+Wykształcenie <select name="wyksztalcenie">
+<option selected="selected" value="">niepełne podstawowe</option>
+<option value="wyzsze">wyższe</option>
+<option value="srednie">średnie</option>
+<option value="podstawowe">podstawowe</option>
+
+</select>
+<br>Najczęściej odwiedzane portale:<br>
+<input type="checkbox" name="jakas_nazwa1" value="SW"> Onet<br>
+<input type="checkbox" name="jakas_nazwa1" value="Dogs"> Interia<br>
+<input type="checkbox" name="jakas_nazwa1" value="Dune"> Wirtualna Polska<br>
+<input type="checkbox" name="jakas_nazwa1" value="Solaria"> Gazeta Wyborcza<br>
+
+
+Uwagi:<br>
+<textarea name="XXXXXXX" rows="8" cols="80">
+</textarea></div><br>
+<div class="zainteresowania">Zainteresowania:<br>
+<select name="zainteresowania" multiple size="4">
+	<option selected>muzyka</option>
+	<option>informatyka</option>
+	<option>matematyka</option>
+	<option>malarstwo</option>
+	<option>fotografia</option>
+	<option>podróże</option>
+	</select></div>
+<center><input type="reset" value="Czyść pola">
+<input type="submit" value="Wyślij"></center>
+</form>
+
+	</body>
+</html>
